@@ -5,19 +5,19 @@ Introduction
 My Portfolio is a React.js application that serves as an online portfolio to showcase my work, skills, and achievements. It provides an overview of my background, displays my projects, and offers a way to contact me.
 
 ### Features
-About Me
+- About Me
 An overview of my background, skills, and experiences.
 
-Projects
+- Projects
 A collection of my notable projects with descriptions, screenshots, and links.
 
-Skills
+- Skills
 A list of my technical skills and proficiencies.
 
-Resume
+- Resume
 A link to download my resume.
 
-Contact
+- Contact
 A form to send me messages or inquiries.
 
 ### Technologies Used
