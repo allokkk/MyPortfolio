@@ -8,6 +8,8 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import ContactPage from './components/ContactPage';
+import Footer from './components/Footer';
+
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -47,10 +49,11 @@ function App() {
           <Experience/>
           <Education/>
 
-          <ContactPage/>
+          
           <Projects  />
           
-         
+          <ContactPage/>
+        
 
   
         </Wrapper>     
