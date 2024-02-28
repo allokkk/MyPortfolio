@@ -31,7 +31,7 @@ const Title = styled.div`
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
 
   @media (max-width: 768px) {
     margin-top: 12px;
@@ -43,15 +43,17 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
+  color: black;
 
   @media (max-width: 768px) {
     font-size: 16px;
   }
+  margin-bottom:20px;
 `;
 
 const ProjectCard = styled.div`
-  background-color: #f0f7ff; /* Light blue background */
+  margin-top:5px;
+  background-color: #31473A; /* Light blue background */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,18 +63,21 @@ const ProjectCard = styled.div`
   @media (max-width: 960px) {
     width: 100%; /* Full width on smaller screens */
   }
+
+  box-shadow:  20px 20px 60px #1F2634,
+  -20px -20px 60px #1F2634;
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 24px;
   font-weight: 600;
-  color: #1a1a1a; /* Dark black text */
+  color:white; /* Dark black text */
   margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
   font-size: 18px;
-  color: #333333; /* Dark black text */
+  color: white; /* Dark black text */
 `;
 
 const Projects = () => {
@@ -80,21 +85,10 @@ const Projects = () => {
     <Container id="projects">
       <Title>Projects</Title>
       <Desc>
-        I have worked on a wide range of projects. From web apps to android
-        apps. Here are some of my projects.
+      I have actively contributed to numerous projects, a selection of which I have outlined below with plans to incorporate additional projects shortly.
       </Desc>
       <Wrapper>
-        <ProjectCard>
-          <ProjectTitle>
-            Loan Disbursement Analysis, Power BI | Dec 2023
-          </ProjectTitle>
-          <ProjectDescription>
-            Enhanced decision-making by providing executive stakeholders with
-            a dynamic tool to assess disbursement trends. Improved operational
-            efficiency by automating data extraction, transformation, and
-            dashboard updates in Power BI.
-          </ProjectDescription>
-        </ProjectCard>
+       
         <ProjectCard>
           <ProjectTitle>
             Heart Disease Prediction, Deep Learning | April 2023
@@ -121,6 +115,17 @@ const Projects = () => {
             detailed feedback. Quickly assess candidate suitability with a
             percentage match score indicating how well a resume aligns with a
             given job description.
+          </ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectTitle>
+            Loan Disbursement Analysis, Power BI | Dec 2023
+          </ProjectTitle>
+          <ProjectDescription>
+            Enhanced decision-making by providing executive stakeholders with
+            a dynamic tool to assess disbursement trends. Improved operational
+            efficiency by automating data extraction, transformation, and
+            dashboard updates in Power BI.
           </ProjectDescription>
         </ProjectCard>
       </Wrapper>

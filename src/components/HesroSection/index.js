@@ -4,9 +4,10 @@ import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
 import HeroImg from "../../images/HeroImage.jpg";
 import HeroBgAnimation from '../HeroBgAnimation';
+import { Link as MobileLink } from 'react-router-dom';
 
 const HeroContainer = styled.div`
-        background: ${({ theme }) => theme.card_light};
+        background: #EDF4F2;
         display: flex;
         justify-content: center;
         position: relative;
@@ -19,7 +20,7 @@ const HeroContainer = styled.div`
         }
         z-index: 1;
 
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+        
 `;
 
 
@@ -99,7 +100,7 @@ const HeroRightContainer = styled.div`
 const Title = styled.div`
     font-weight: 700;
     font-size: 50px;
-    color: ${({ theme }) => theme.text_primary};
+    color: black;
     line-height: 68px;
     @media (max-width: 960px) {
         text-align: center;
@@ -117,7 +118,7 @@ const TextLoop = styled.div`
     font-size: 32px;
     display: flex;
     gap: 12px;
-    color: ${({ theme }) => theme.text_primary};
+    color: black;
     line-height: 68px;
     @media (max-width: 960px) {
         text-align: center;
@@ -139,7 +140,7 @@ const SubTitle = styled.div`
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 42px;
-    color: ${({ theme }) => theme.text_primary + 95};
+    color: black;
 
     @media (max-width: 960px) {
         text-align: center;
@@ -207,39 +208,41 @@ const Image = styled.img`
     }
 `;
 
-const Hero=()=>{
+
+
+const Hero = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
     return (
         <div id="about">
-        <HeroContainer>
-            <HeroBg>
-               <HeroBgAnimation/> 
-            </HeroBg>
-            <HeroInnerContainer>
-                <HeroLeftContainer>
-                    <Title>Hi, I am <br /> {Bio.name}</Title>
-                            <TextLoop>
-                                I am a
-                                <Span>
-                                    <Typewriter
-                                        options={{
-                                            strings: Bio.roles,
-                                            autoStart: true,
-                                            loop: true,
-                                        }}
-                                    />
-                                </Span>
-                            </TextLoop>
-                            <SubTitle>{Bio.description}</SubTitle>
-                            <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
-                </HeroLeftContainer>
-                <HeroRightContainer>
-                    <Image src={HeroImg} alt="Hero" />
-                </HeroRightContainer>
-            </HeroInnerContainer>
-        </HeroContainer>
+            <HeroContainer>
+                <HeroBg>
+                    <HeroBgAnimation />
+                </HeroBg>
+                <HeroInnerContainer>
+                    <HeroLeftContainer>
+                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <TextLoop>
+                            I am a
+                            <Span>
+                                <Typewriter
+                                    options={{
+                                        strings: Bio.roles,
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </Span>
+                        </TextLoop>
+                        <SubTitle>{Bio.description}</SubTitle>
+                        <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
+                    </HeroLeftContainer>
+                    <HeroRightContainer>
+                        <Image src={HeroImg} alt="Hero" />
+                    </HeroRightContainer>
+                </HeroInnerContainer>
+            </HeroContainer>
         </div>
     );
-
 };
 
 export default Hero;

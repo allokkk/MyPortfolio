@@ -5,7 +5,8 @@ const Document = styled.img`
     display: none;
     height: 70px;
     width: fit-content;
-    background-color: #000;
+    top-margin:10px;
+    background-color: #31473A;
     border-radius: 10px;
     &:hover{
         cursor: pointer;
@@ -17,7 +18,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: white;
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -31,9 +32,11 @@ max-width: 100%;
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
+
 `
 
 const Card = styled.div`
+    background-color: #31473A;
     width: 650px;
     border-radius: 10px;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -65,6 +68,8 @@ const Card = styled.div`
 
     }
     border: 0.1px solid #854CE6;
+    box-shadow:  20px 20px 60px #1F2634,
+    -20px -20px 60px #1F2634;
 `
 
 const Top = styled.div`
@@ -74,7 +79,8 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
+    height: 40px;
+    weidth: 150px;
     background-color: #000;
     border-radius: 10px;
     margin-top: 4px;
@@ -93,7 +99,7 @@ const Body = styled.div`
 const Name = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -102,7 +108,7 @@ const Name = styled.div`
 const Degree = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -111,20 +117,20 @@ const Degree = styled.div`
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color:white;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
 `
 
-const Grade = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+// const Grade = styled.div`
+//     font-size: 14px;
+//     font-weight: 500;
+//     color: white;
+//     @media only screen and (max-width: 768px){
+//         font-size: 12px;
+//     }
+// `
 
 
 

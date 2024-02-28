@@ -14,6 +14,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:#EDF4F2;
     position: relative;
     z-index: 1;
     align-items: center;
@@ -36,6 +37,8 @@ const Wrapper = styled.div`
     @media (max-width: 960px) {
         flex-direction: column;
     }
+    
+    
 `;
 
 const Title = styled.div`
@@ -43,7 +46,7 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -54,7 +57,7 @@ const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
+    color: black;
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 16px;
@@ -70,8 +73,8 @@ const TimelineSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
+   // background-color:red;
 `;
-
 
 
 const Experience= () => {
@@ -80,24 +83,22 @@ const Experience= () => {
             <Wrapper>
                 <Title>Experience</Title>
                 <Desc>
-                    My work experience as a software engineer and working on different companies and projects.
+                    My work experience as a Data Science Professional is below.
                 </Desc>
                 <TimelineSection>
                     <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
+                        {experiences.map((experience, index) => (
+                            <TimelineItem key={index}>
                                  <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    <TimelineDot  />
+                                    {index !== experiences.length - 1 && <TimelineConnector  />}
                                 </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                                <TimelineContent >
                                     <ExperienceCard experience={experience}/>
-                                </TimelineContent> *
-                                
+                                </TimelineContent>
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>

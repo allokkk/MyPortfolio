@@ -59,6 +59,7 @@ const Button = styled.button`
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
+  margin-bottom: 120px;
 `;
 
 const ContactPage = () => {

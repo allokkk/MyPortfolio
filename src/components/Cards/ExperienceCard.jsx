@@ -43,6 +43,8 @@ const Card = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color:#31473A;
+    
     gap: 12px;
     transition: all 0.3s ease-in-out;
     &:hover{
@@ -66,7 +68,9 @@ const Card = styled.div`
     }
 
     border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    //box-shadow: rgba(230, 9200, 2300, 0.150) 10px 14px 124px;
+    box-shadow:  20px 20px 60px #1F2634,
+        -20px -20px 60px #1F2634;
 `
 
 const Top = styled.div`
@@ -76,9 +80,10 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
+    height: 30px;
+    weidth:100px;
     background-color: #000;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 4px;
     @media only screen and (max-width: 768px){
         height: 40px;
