@@ -11,6 +11,7 @@ import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
 
 
+
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Projects from "./components/Projects";
@@ -59,14 +60,17 @@ function App() {
 
           
           <Projects  />
+          
        
           <ContactPage/>
           
         
 
   
-        </Wrapper>     
+        </Wrapper>
+            
         <Footer/>
+
       </Body>
 
       

@@ -10,24 +10,27 @@ const Container = styled.div`
   padding: 30px;
   border-radius: 5px;
   margin-top: 40px;
+  
+
 `;
 
 const Title = styled.h1`
   font-size: 36px;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
 `;
 
 const Form = styled.form`
   width: 100%;
   max-width: 500px;
+  
 `;
 
 const Label = styled.label`
   font-size: 18px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
   margin-bottom: 8px;
   display: block;
 `;
@@ -45,10 +48,13 @@ const TextArea = styled.textarea`
   width: 100%;
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.primary};
+
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 15px;
   resize: none;
+  box-shadow:  20px 20px 60px #1F2634,
+        -20px -20px 60px #1F2634;
 `;
 
 const Button = styled.button`
@@ -60,6 +66,8 @@ const Button = styled.button`
   font-size: 18px;
   cursor: pointer;
   margin-bottom: 120px;
+  box-shadow:  20px 20px 60px #1F2634,
+        -20px -20px 60px #1F2634;
 `;
 
 const ContactPage = () => {

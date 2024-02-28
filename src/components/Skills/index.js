@@ -10,7 +10,9 @@ position: relative;
 z-index: 1;
 align-items: center;
 background-color:#EDF4F2;
-`
+
+
+`;
 
 const Wrapper = styled.div`
 position: relative;
@@ -22,8 +24,11 @@ width: 100%;
 max-width: 1100px;
 gap: 12px;
 background-color:#EDF4F2;
+
 @media (max-width: 960px) {
     flex-direction: column;
+
+
 }
 `
 
@@ -57,15 +62,22 @@ const SkillsContainer = styled.div`
   gap: 30px;
   justify-content: center;
   background-color:#EDF4F2;
+  
+  
  
 `;
 
 const Skill = styled.div`
+  margin-top:20px;
+  margin-bottom:30px;
   width: 100%;
   max-width: 500px;
   background: #31473A;
+  //background-color:black;
   border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  //box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  
+
   border-radius: 16px;
   padding: 18px 36px;
   @media (max-width: 768px) {
@@ -131,7 +143,7 @@ const Skills = () => {
     
     
       <>    
-          <Container id='1'><Wrapper></Wrapper><Title>Skills</Title><Desc>Here are some of my skills .</Desc></Container>
+          <Container id='skills'><Wrapper></Wrapper><Title>Skills</Title><Desc></Desc></Container>
           <SkillsContainer>
               {skills.map((skill, index) => (
                   <Skill key={index}>

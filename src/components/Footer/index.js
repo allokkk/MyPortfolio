@@ -10,7 +10,15 @@ const FooterContainer = styled.div`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+ // background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+
+  background: linear-gradient(
+    120deg, 
+    rgba(49, 71, 58, 0.9)10%, /* Adjusted opacity and position */
+    rgba(0, 0, 0, 0.4) 80%, /* Shadow color with opacity */
+    rgba(0, 0, 0, 0.4) 20% /* Adjusted opacity and position */
+  );
+
 `;
 
 

@@ -37,6 +37,7 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
+  margin-bottom:20px;
 `;
 
 const Desc = styled.div`
@@ -48,8 +49,9 @@ const Desc = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
-  margin-bottom:20px;
+  margin-bottom:70px;
 `;
+
 
 const ProjectCard = styled.div`
   margin-top:5px;
@@ -59,13 +61,15 @@ const ProjectCard = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(50% - 10px); /* Set width to occupy half of the container */
   box-sizing: border-box;
-
-  @media (max-width: 960px) {
-    width: 100%; /* Full width on smaller screens */
-  }
-
+  border: 0.1px solid #854CE6;
   box-shadow:  20px 20px 60px #1F2634,
   -20px -20px 60px #1F2634;
+  transition: all 0.3s ease-in-out; /* Add transition for smooth hover effect */
+
+  &:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
+  }
 `;
 
 const ProjectTitle = styled.h3`

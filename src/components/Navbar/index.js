@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { useTheme } from "styled-components" ;
-import {DiCssdeck} from "react-icons/di";
+
 import { Link as LinkR } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
@@ -21,6 +21,9 @@ const Nav = styled.div`
     @media (max-width: 960px) {
         trastion: 0.8s all ease;
     }
+    box-shadow:  20px 20px 60px #1F2634,
+        -20px -20px 60px #1F2634;
+
 `;
 
 const NavbarContainer = styled.div`
@@ -188,10 +191,11 @@ const Navbar =() =>{
                     
                 <NavItems>
                   <NavLink href="#about">About</NavLink>   
-                  <NavLink href="#Skills">Skills1</NavLink>
+                  <NavLink href="#skills">Skills</NavLink>
                   <NavLink href="#experience">Experience</NavLink>
                   <NavLink href="#projects">Projects</NavLink>
                   <NavLink href="#education">Education</NavLink>
+                  
                 </NavItems>
 
 
