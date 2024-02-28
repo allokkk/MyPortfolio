@@ -37,24 +37,24 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
-  margin-bottom:20px;
+  margin-bottom: 20px;
 `;
 
 const Desc = styled.div`
-  font-size: 18px;
+  font-size: 20px; /* Adjusted font size for consistency */
   text-align: center;
   max-width: 600px;
-  color: black;
+  color: black; /* Adjusted color for better contrast */
+  margin-bottom: 70px;
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px; /* Adjusted font size for smaller screens */
   }
-  margin-bottom:70px;
 `;
 
 
 const ProjectCard = styled.div`
-  margin-top:5px;
+  margin-top: 5px;
   background-color: #31473A; /* Light blue background */
   padding: 20px;
   border-radius: 10px;
@@ -73,14 +73,19 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectTitle = styled.h3`
-  font-size: 24px;
-  font-weight: 600;
-  color:white; /* Dark black text */
+ 
   margin-bottom: 10px;
+
+  font-size: 22px;
+    font-weight: 600;
+    color: white;
+    @media only screen and (max-width: 768px){
+        font-size: 14px;
+    }
 `;
 
 const ProjectDescription = styled.p`
-  font-size: 18px;
+  font-size: 15px; /* Adjusted font size for consistency */
   color: white; /* Dark black text */
 `;
 
@@ -89,10 +94,11 @@ const Projects = () => {
     <Container id="projects">
       <Title>Projects</Title>
       <Desc>
-      I have actively contributed to numerous projects, a selection of which I have outlined below with plans to incorporate additional projects shortly.
+        I have actively contributed to numerous projects, a selection of which
+        I have outlined below with plans to incorporate additional projects
+        shortly.
       </Desc>
       <Wrapper>
-       
         <ProjectCard>
           <ProjectTitle>
             Heart Disease Prediction, Deep Learning | April 2023

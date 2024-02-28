@@ -7,7 +7,15 @@ export const Bio = {
       "Software Engineer"
     ],
     description:
-      "An accomplished Data Scientist with 4+ years of expertise in advanced analytics, machine learning, and Data Engineering. Proficient in Python, SQL, and R, leveraging frameworks like TensorFlow and scikit-learn to derive insights and develop strategic solutions. Experienced in SDLC, Agile/Scrum, and Waterfall methodologies, with proficiency in cloud technologies including AWS and databases like MySQL, PostgreSQL, and MongoDB. Skilled in crafting visualizations and dashboards using Tableau and Power BI. Committed to upholding data security and privacy standards, with strong problem-solving and communication abilities. A collaborative team player dedicated to ensuring quality and accuracy throughout the data science lifecycle.",
+    <div>
+        As an accomplished Data Scientist with over 4 years of expertise, I specialize in advanced analytics, machine learning, and Data Engineering. My proficiency lies in utilizing Python, SQL, and R, where I leverage frameworks such as TensorFlow and scikit-learn to extract valuable insights and develop strategic solutions. I have a strong command of cloud technologies such as AWS and databases including MySQL, PostgreSQL, and MongoDB. <br/>
+      <br/>
+        My ability to craft compelling visualizations and intuitive dashboards using tools like Tableau and Power BI adds depth to my analytical capabilities.
+        Upholding data security and privacy standards is paramount to me, and I am dedicated to employing robust measures in this regard. With a keen problem-solving acumen 
+        and effective communication skills, I excel in collaborative environments, ensuring quality and accuracy throughout the data science lifecycle <br/>
+
+    </div>,
+      
     github: "https://github.com/allokkk",
     resume:
       "https://drive.google.com/file/d/11eale6wjSt8ZJR0mv2rxmTl8WAIKPXW6/view?usp=sharing",

@@ -17,7 +17,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: white;
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -25,12 +25,12 @@ const Description = styled.div`
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 `
 
 const Card = styled.div`
@@ -44,7 +44,6 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     background-color:#31473A;
-    
     gap: 12px;
     transition: all 0.3s ease-in-out;
     &:hover{
@@ -64,13 +63,11 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
 
     border: 0.1px solid #306EE8;
-    //box-shadow: rgba(230, 9200, 2300, 0.150) 10px 14px 124px;
     box-shadow:  20px 20px 60px #1F2634,
-        -20px -20px 60px #1F2634;
+    -20px -20px 60px #1F2634;
 `
 
 const Top = styled.div`
@@ -96,11 +93,10 @@ const Body = styled.div`
     flex-direction: column; 
 `
 
-
 const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -109,7 +105,7 @@ const Role = styled.div`
 const Company = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -118,12 +114,11 @@ const Company = styled.div`
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
 `
-
 
 const Skills = styled.div`
     width: 100%;
@@ -141,13 +136,11 @@ const ItemWrapper = styled.div`
 const Skill = styled.div`
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
-
-
 
 const ExperienceCard = ({ experience }) => {
     return (
@@ -163,7 +156,6 @@ const ExperienceCard = ({ experience }) => {
             <Description>
                 {experience?.desc &&
                     <Span>{experience?.desc}</Span>
-
                 }
                 {experience?.skills &&
                     <>
