@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
-import HeroImg from "../../images/HeroImage.jpeg";
+import HeroImg from "../../images/Hero1.jpg";
 import HeroBgAnimation from '../HeroBgAnimation';
 import { Link as MobileLink } from 'react-router-dom';
 
@@ -191,10 +191,10 @@ const ResumeButton = styled.a`
 const Image = styled.img`
     position: relative;
     width: 100%;
-    height: 100%;
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 50%;
+    height: auto;
+    max-width: 500px;
+    max-height: 750px;
+    border-radius: 0;  /* Removed border-radius to make it rectangular/square */
     border: 2px solid ${({ theme }) => theme.primary};
 
     @media (max-width: 768px) {
@@ -206,6 +206,7 @@ const Image = styled.img`
         max-width: 280px;
         max-height: 280px;
     }
+
 `;
 
 
